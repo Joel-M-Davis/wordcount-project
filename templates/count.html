@@ -1,0 +1,18 @@
+<h1>There are {{ count }} words in your original</h1>
+
+<a href="{% url 'home' %}">Start Again</a>
+
+<h1>Your Text:</h1>
+{{ fulltext }}
+
+<div />
+<div />
+<h1>Word Counts:</h1>
+
+{% for word, counttotal in booger %}
+
+{{ word }}: {{ counttotal }}
+<br />
+
+{% endfor %}
+
